@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#edit {
+  display: none;
+  /*para que aparezca el input de editar cuando apretemos el boton */
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.box-div {
+  min-height: 50%;
+  min-width: 20%;
+  background-color: rgb(182, 212, 175);
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.75);
+}
+.input-text {
+  height: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #39c;
+  margin: 4px 2px;
+}
+
+.nameRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nameRow h2 {
+  font-family: sans-serif;
+}
+.button {
+  margin: -10px 0 0 10px;
+}
+.btn {
+  color: #0099cc;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  background: transparent;
+  border: 2px solid #0099cc;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 6px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+}
+/* Al poner el curso encima (hover) */
+.btn1:hover {
+  background-color: #008cba;
+  color: white;
+}
+.emptyNames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", sans-serif;
+}
+
+@media screen and (max-width: 452px) {
+  .box-div {
+    min-height: 30%;
+    width: 200px;
+  }
+  .nameRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nameRow h2 {
+    font-size: 10px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+
+    font-size: 10px;
+    margin: 2px 4px;
+  }
+}

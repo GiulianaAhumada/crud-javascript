@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud con métodos de javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="box-div">
+        <input
+          id="add-name"
+          placeholder="Agregue un nombre"
+          type="text"
+          class="input-text"
+        />
+        <button onClick="agregar()" class="btn btn1">AGREGAR</button>
+        <div id="edit">
+          <form action="javascript:void(0);" id="saveEdit">
+            <input type="text" id="edit-name" class="input-text" />
+            <input type="submit" value="Edit" class="btn btn1" /><a
+              onclick="CloseInput()"
+              aria-label="Close"
+              >&#10006;</a
+            >
+          </form>
+        </div>
+        <div id="listado"></div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
